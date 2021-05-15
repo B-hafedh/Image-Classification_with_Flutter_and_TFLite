@@ -24,6 +24,7 @@ and run this command in your terminal: `flutter pub get`<br/>
 
 # Get Started
 After we have our trained TFLite model we can start developing our Flutter application.<br/>
+**Note** : in this project we use the `EfficientNetv4` model, but you can deploy your own.
 
 First, create an `assets` folder inside the project folder and copy the downloaded model<br/>
 and the corresponding labels file into that folder, also we have to add the assets in the `pubspec.yaml`.<br/>
