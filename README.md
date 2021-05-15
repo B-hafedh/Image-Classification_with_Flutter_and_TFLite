@@ -24,6 +24,7 @@ and run this command in your terminal: `flutter pub get`<br/>
 
 # Get Started
 After we have our trained TFLite model we can start developing our Flutter application.<br/>
+
 **Note** : in this project we use the `EfficientNetv4` model, but you can deploy your own.
 
 First, create an `assets` folder inside the project folder and copy the downloaded model<br/>
@@ -46,6 +47,14 @@ The `lib` folder contains three files :
       Now we can load our model with the `loadModel` function, and using `getImageFromGallery` and `getImageFromCamera`<br/>
       we can pick images either from the gallery (this includes cloud storage) or from the device camera,<br/>
       then pass this image on to the `classifyImage` function to complete the classification process.
+      
+# Results
+ Now, after we implement our Flutter code let's look at the output of the application.<br/>
+ 
+ <img src="https://user-images.githubusercontent.com/84082577/118377505-8802c600-b5c5-11eb-9c3d-152c237022ab.jpg" width="200" height="400">
+
+ 
+ 
       
  
 
