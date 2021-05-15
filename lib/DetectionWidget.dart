@@ -78,12 +78,12 @@ class _MyAppState extends State<DetectionWidget> {
           animatedIcon: AnimatedIcons.menu_close,
           children: [
             SpeedDialChild(
-              child: FloatingActionButton(onPressed: pickImage,
+              child: FloatingActionButton(onPressed: getImageFromGallery,
                 backgroundColor: Colors.greenAccent,
                 child: Icon(Icons.add_photo_alternate_outlined,color: Colors.white,),),
             ),
             SpeedDialChild(
-              child: FloatingActionButton(onPressed: pickImage1,
+              child: FloatingActionButton(onPressed: getImageFromCamera,
                 backgroundColor: Colors.greenAccent,
                 child: Icon(Icons.camera,color: Colors.white),
               ),
@@ -94,7 +94,7 @@ class _MyAppState extends State<DetectionWidget> {
     );
 
   }
-   pickImage() async {
+   getImageFromGallery() async {
     var image = await ImagePicker.pickImage(source:ImageSource.gallery);
     if (image == null) return null;
       setState(() {
@@ -104,7 +104,7 @@ class _MyAppState extends State<DetectionWidget> {
     classifyImage(image);
 
   }
-  pickImage1() async {
+   getImageFromCamera() async {
     var image = await ImagePicker.pickImage(source:ImageSource.camera);
     if (image == null) return null;
     setState(() {
