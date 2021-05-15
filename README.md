@@ -28,7 +28,21 @@ After we have our trained TFLite model we can start developing our Flutter appli
 First, create an `assets` folder inside the project folder and copy the downloaded model<br/>
 and the corresponding labels file into that folder, also we have to add the assets in the `pubspec.yaml`.<br/>
 
-![image](https://user-images.githubusercontent.com/84082577/118361501-a8119580-b583-11eb-8ca9-72a77bfcc42c.png)  ![image](https://user-images.githubusercontent.com/84082577/118361960-6bdf3480-b585-11eb-8052-6be300288ab1.png)
+![image](https://user-images.githubusercontent.com/84082577/118361501-a8119580-b583-11eb-8ca9-72a77bfcc42c.png)  ![image](https://user-images.githubusercontent.com/84082577/118361960-6bdf3480-b585-11eb-8052-6be300288ab1.png).
+
+
+The `lib` folder contains three files :
+- `main.dart`: this file contains the main function which shall load the app layout on the screen.
+- `splash_screen.dart` : in this file we manage animations using the ` animated_splash_screen` package.
+-  `DetectionWidget.dart`:
+
+      We need to initiate three variables : 
+
+      - **List  _outputs** : to recieve the output.
+      - **File  _image** : to store the uploaded image.
+      - **bool  _loading** : to catch loading errors.
+      We also need to load our model with the `loadModel` function, and using 
+ 
 
 
 
@@ -44,4 +58,5 @@ and the corresponding labels file into that folder, also we have to add the asse
 
 
 
+ 
  
