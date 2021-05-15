@@ -59,10 +59,9 @@ class _MyAppState extends State<DetectionWidget> {
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 20.0,
-                              fontFamily: "Montserrat",
                             ),
                     )
-                        : Container()
+                      : Container()
                   ],
                 ),
               ),
