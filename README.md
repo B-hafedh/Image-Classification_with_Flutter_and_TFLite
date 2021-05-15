@@ -11,10 +11,10 @@ as well as tools to train and import our own custom models.
 
 # Requirements
 
-- _TensorFlow Lite_
-- _Image Picker_
-- _Flutter Speed Dial_
-- _Animated Splash Screen_
+- [_TensorFlow Lite_](https://pub.dev/packages/tflite)
+- [_Image Picker_](https://pub.dev/packages/image_picker)
+- [_Flutter Speed Dial_](https://pub.dev/packages/flutter_speed_dial)
+- [_Animated Splash Screen_](https://pub.dev/packages/animated_splash_screen)
 
 Add the packages in your `pubspec.yaml` file under dependencies:<br/>
 
