@@ -13,7 +13,7 @@ class Spalsh_screen extends StatelessWidget {
         AnimatedSplashScreen(
           backgroundColor: Colors.blueGrey,
           curve: Curves.easeInCirc,
-          splash: Image.asset('assets/eye.png'),
+          splash: Image.asset('input your own image path'),
           nextScreen: DetectionWidget(),
           splashTransition: SplashTransition.fadeTransition,
           duration: 3000,
