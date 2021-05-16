@@ -44,7 +44,7 @@ The `lib` folder contains three files :
       - **File  _image** : to store the uploaded image.
       - **bool  _loading** : to catch loading errors.<br/>
    
-      Now we can load our model with the `loadModel` function, and using `getImageFromGallery` and `getImageFromCamera`<br/>
+      Now we can load our model with the `loadModel` function, and using `getImageFromGallery` and `getImageFromCamera`,<br/>
       we can pick images either from the gallery (this includes cloud storage) or from the device camera,<br/>
       then pass this image on to the `classifyImage` function to complete the classification process.
       
